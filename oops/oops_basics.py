@@ -14,3 +14,5 @@ class Employee:
 
 emp_1 = Employee('sahib', 'singh', 50000)
 emp_2 = Employee('berry', 'james', 60000)
+
+print(emp_1.fullname()) #Output = sahib singh
