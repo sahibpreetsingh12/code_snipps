@@ -9,10 +9,10 @@ class Employee:
         
         self.pay = pay
 
-    def fullname(self):
+    def fullname(self): #self is actually object(instance) that is calling this method in the class
         return '{} {}'.format(self.first, self.last)
 
-emp_1 = Employee('sahib', 'singh', 50000)
+emp_1 = Employee('sahib', 'singh', 50000) #emp_1 is the instance of the class Employee
 emp_2 = Employee('berry', 'james', 60000)
 
 print(emp_1.fullname()) #Output = sahib singh
