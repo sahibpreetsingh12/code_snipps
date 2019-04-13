@@ -16,3 +16,5 @@ emp_1 = Employee('sahib', 'singh', 50000)
 emp_2 = Employee('berry', 'james', 60000)
 
 print(emp_1.fullname()) #Output = sahib singh
+
+print(Employee.fullname(emp_1)) #Output = sahib singh
