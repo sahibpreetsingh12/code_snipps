@@ -84,3 +84,7 @@ mgr_1.print_name()
 #mgr_1.rem_emp(emp_1)
 
 #mgr_1.print_name()
+
+
+print(issubclass(Manager,Developer)) #False
+print(issubclass(Manager,Employee))#True
