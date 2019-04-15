@@ -17,4 +17,6 @@ emp_2 = Employee('berry', 'james', 60000)
 
 print(emp_1.fullname()) #Output = sahib singh
 
-print(Employee.fullname(emp_1)) #Output = sahib singh
+print(Employee.fullname(emp_1)) # this seems more obivious but here in this way we have to put name of the object in paranthesis
+#when we call method of class using Name of Class
+#Output = sahib singh
