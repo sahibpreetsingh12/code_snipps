@@ -16,7 +16,11 @@ class Developer(Employee):#in paranthesis name of the parent class
     
     def __init__(self,first,last,pay,prog_lang):
         
-        super().__init__(first,last,pay)# Same as Down Method but useful for single lvel inheritance
+        super().__init__(first,last,pay)# super().<method> 
+        #this way of call is used when we want to use methods/constructor defined in parent class.
+        
+        #complete tutorial  https://realpython.com/python-super/
+        
         self.prog_lang=prog_lang    
         #Employee.__init__(self,first,last,pay) when we wnat to call __init__ method of parent class
         #In case of mutiple inheritance
@@ -24,7 +28,10 @@ class Developer(Employee):#in paranthesis name of the parent class
 class Manager(Employee):
     def __init__(self,first,last,pay,employees=None):
         
-        super().__init__(first,last,pay)
+        super().__init__(first,last,pay)# super(Manager,self)
+        #call is equivalent to the parameterless super() call. The first 
+        #parameter refers to the subclass Manager, while the second parameter refers to a Manager object which,
+        #in this case, is self.
         
         if employees is None:
             self.employees=[]
@@ -85,6 +92,10 @@ mgr_1.print_name()
 
 #mgr_1.print_name()
 
-
 print(issubclass(Manager,Developer)) #False
 print(issubclass(Manager,Employee))#True
+
+
+# for Proper Understanding of super method used above
+
+
