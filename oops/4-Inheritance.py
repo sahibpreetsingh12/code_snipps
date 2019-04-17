@@ -19,7 +19,7 @@ class Developer(Employee):#in paranthesis name of the parent class
         super().__init__(first,last,pay)# super().<method> 
         #this way of call is used when we want to use methods/constructor defined in parent class.
         
-        #complete tutorial  https://realpython.com/python-super/
+        #complete tutorial  https://realpython.com/python-super/#a-super-deep-dive
         
         self.prog_lang=prog_lang    
         #Employee.__init__(self,first,last,pay) when we wnat to call __init__ method of parent class
@@ -98,4 +98,5 @@ print(issubclass(Manager,Employee))#True
 
 # for Proper Understanding of super method used above
 
+#https://realpython.com/python-super/#a-super-deep-dive
 
